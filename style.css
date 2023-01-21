@@ -108,11 +108,12 @@ body {
   font-weight: bold;
   padding: 20px 0px 0px 30px;
   margin-top: 60px;
-}
+} 
+
 #shop_And_Department {
   font-weight: bold;
-  color: linear-gradient(green, rgb(4, 6, 4));
-  text-shadow: 0px 2px 2px rgb(255, 255, 255);
+  color: linear-gradient(green, rgb(9, 9, 9));
+  text-shadow: 0px 2px 2px #3b6d58;
 }
 
 #details,
@@ -278,19 +279,20 @@ border: 1px solid black;
 }
 
 /* last div */
-/* #last_div{
-    background: red; 
-    display: block;
-    justify-content: center;
-    align-items: center;
-} */
+#last_div{
+    background: #dfc0ab;  
+    justify-content: space-evenly;
+    align-items: center; 
+    border-radius: 9px; 
+    
+}
 /* delivery div */
 .delivery_div{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: rgb(87, 81, 81); 
-     
+    display: flex; 
+    justify-content: space-evenly;
+    background: rgb(255, 255, 255); 
+    margin: 0px 80px 0px 80px; 
+    
      
 }
 .home_delivery{
@@ -327,8 +329,57 @@ border-radius: 10px;
    border-radius: 5px;
 }
 
-.faq_h3{
-    word-wrap: nowrap;
+.footer{
+    background: rgb(255, 255, 255);
+    height: 100px;
+    margin: 0px 80px;
+    padding-top: 3px;
 }
 
+/* footer logo */
+/* #footer_logo_icon{
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+} */
+/* #payment_images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    width: 90px;
+} */
+
+/* #icon_with_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+ 
+
+.policy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.footer_options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer_options_icon{
+    padding-left: 10px;
+    margin-top: 10px;
+    align-items: center;
+    height: 40px;
+}
+.footer_option_link{
+    margin-top: 20px;
+}
  
