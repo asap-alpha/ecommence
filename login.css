@@ -1,0 +1,46 @@
+body{
+    background-color: #bac7b9;
+    color: #466443
+   
+
+}
+
+.login{
+    background: #f9fcf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+    border: 1px solid rgb(13, 143, 45);
+}
+
+
+.button_remember_forget, .sign_up{
+
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+     gap: 20px;
+}
+
+.email, .password, .submit{
+    color: #466443;
+    width: 300px;
+    border-radius: 5px;
+    height: 25px;
+}
+ .submit{
+    background: #466443;
+    color: white;
+ }
+
+
+ .forget_password_link, .sign_up_link{
+    text-decoration: none;
+    color: #466443;
+ }
