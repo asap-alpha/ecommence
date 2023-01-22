@@ -28,13 +28,13 @@ body{
      gap: 20px;
 }
 
-.email, .password, .submit{
+#username, #password,#confirm_password, #submit{
     color: #466443;
     width: 300px;
     border-radius: 5px;
     height: 25px;
 }
- .submit{
+ #submit{
     background: #466443;
     color: white;
  }
