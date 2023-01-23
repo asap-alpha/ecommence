@@ -112,14 +112,20 @@ body {
 
 #shop_And_Department {
   font-weight: bold;
-  color: linear-gradient(green, rgb(9, 9, 9));
-  text-shadow: 0px 2px 2px #3b6d58;
+  color: green;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
 }
 
+#details{
+  color: black;
+  font-style: italic;
+}
 #details,
 #shop_And_Department {
   word-wrap: break-word;
   width: 500px;
+
   margin-left: 50px;
 }
 #read_more {
@@ -186,7 +192,7 @@ border: 1px solid black;
 }
 
 /* what's new */
-.whats_new {
+#whats_new {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -287,7 +293,7 @@ border: 1px solid black;
     
 }
 /* delivery div */
-.delivery_div{
+#delivery_div{
     display: flex; 
     justify-content: space-evenly;
     background: rgb(255, 255, 255); 
@@ -383,3 +389,6 @@ border-radius: 10px;
     margin-top: 20px;
 }
  
+#what{
+  margin-left: 80px;
+}

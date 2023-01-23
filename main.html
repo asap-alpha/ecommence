@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
+    <!-- myshop font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- favourite icon -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./style.css">
     <title>myShop</title>
 </head>
 
@@ -49,7 +52,7 @@
             <div class="logo-div">
                 <img id="logo" src="./images/shoppingCart.jpg" alt="logo">
                 <a href="#" id="myshop">
-                    <h1>myShop</h1>
+                    <h1> myShop</h1>
                 </a>
             </div>
             <select name="categories" id="categories-dropdown">
@@ -61,13 +64,14 @@
                 <option value="">Sneakers</option>
                 <option value="">Travel</option>
             </select>
-            <a href="#" id="deal">
+
+            <a href="#shop_cat" id="deal">
                 <h2>Deals</h2>
             </a>
-            <a href="#" id="whatsnew">
+            <a href="#whats_new" id="whatsnew">
                 <h2>What's New</h2>
             </a>
-            <a href="#" id="delivery">
+            <a href="#delivery_div" id="delivery">
                 <h2>Delivery</h2>
             </a>
             <div>
@@ -135,8 +139,10 @@
             </div>
         </div>
     </div>
+
+    <h2 id="what">What's New</h2>
     <!-- whats new-->
-    <div class="whats_new">
+    <div id="whats_new">
         <!--first item_laptop-->
         <div class="first_item">
             <div class="fav">
@@ -230,9 +236,9 @@
 
     <!-- last div with footer and payment -->
     <div id="last_div">
-         
+
         <!-- delivery -->
-        <div class="delivery_div">
+        <div id="delivery_div">
             <div id="delivery_man">
                 <h1>
                     Home Delivery Options
@@ -272,64 +278,41 @@
                     </div>
                 </div>
             </div>
-             
+
         </div>
-            <!-- footer -->
-            <div class="footer"> 
-                <hr>
-                <div class="policy">
-                    <div class="footer_options">
-                        <h3>Become Seller</h3>
-                        <img class="footer_options_icon" src="./images/become_member.png" alt="become a member">
-                    </div>
-                    <div class="footer_options">
-                        <h3>Gift Cards</h3>
-                        <img class="footer_options_icon" src="./images/gift_card.png" alt="gift cards">
-                    </div>
-                    <div class="footer_options">
-                        <h3>Help Center</h3>
-                        <img class="footer_options_icon" src="./images/help.png" alt="help section">
-                    </div>
-                    <div class="footer_options">
-                        <h3>Terms of Use</h3>
-                        <img src="" alt="">
-                    </div>
-                    <div class="footer_options">
-                        <h3>Privacy Policy</h3>
-                        <img src="" alt="">
-                    </div>
-                    <div class="footer_options">
-                       <h3>All Right reserved by myShop | 2023</h3>
-                        <img src="" alt="">
-                    </div>
+        <!-- footer -->
+        <div class="footer">
+            <hr>
+            <div class="policy">
+                <div class="footer_options">
+                    <h3>Become Seller</h3>
+                    <img class="footer_options_icon" src="./images/become_member.png" alt="become a member">
                 </div>
-                <hr>
-                <!-- <div class="logo-div" id="footer_logo_icon">
-                    <div id="icon_with_text">
-                        <img id="logo" src="./images/shoppingCart.jpg" alt="logo">
-                    <a href="#" id="myshop">
-                        <h1>myShop</h1>
-                    </a>
-                    </div>
-                    <div>
-                        <h5>
-                            My Shop will accepts the following pay soon!.
-                        </h5>
-                        <h3>
-                            Accepted Payment
-                        </h3>
-                    </div>
-                   accepted payment list -->
-                    <!-- <div id="payment_images">  -->
-                        <!-- <img src="./payment/googlepay.jpg" alt="googlepay"> 
-                        <img src="./payment/masterCard.jpg" alt="masterCard"> 
-                        <img src="./payment/visa.jpg" alt="visa"> -->
-                    <!-- </div> -->
-                <!-- </div> -->
-              
-            </div> 
+                <div class="footer_options">
+                    <h3>Gift Cards</h3>
+                    <img class="footer_options_icon" src="./images/gift_card.png" alt="gift cards">
+                </div>
+                <div class="footer_options">
+                    <h3>Help Center</h3>
+                    <img class="footer_options_icon" src="./images/help.png" alt="help section">
+                </div>
+                <div class="footer_options">
+                    <h3>Terms of Use</h3>
+                    <img src="" alt="">
+                </div>
+                <div class="footer_options">
+                    <h3>Privacy Policy</h3>
+                    <img src="" alt="">
+                </div>
+                <div class="footer_options">
+                    <h3>All Right reserved by myShop | 2023</h3>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <hr>
+        </div>
     </div>
- 
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -9,19 +9,28 @@ async function createSignUpValues( ){
     let country = document.getElementById('country').value;
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirm_password').value;
-    
+    //getting data from the options
+    var x = document.getElementById("gender").selectedIndex;
+    alert(document.getElementsByTagName("option")[x].value);
+     
+ alert(firstName);
+ alert(secondName);
+ alert(userName);
+ alert(x);
+ alert(country);
+ alert(password);
+ alert(confirmPassword);
 
-    //for routing to the next screen
-  let routeToNextScreen = document.getElementById('link_to_main_page');
-  let routeError = document.getElementById('link_to_main_pag');
+   const getdata = await fetch(`https://localhost:7086/api/createUser`, {method: "post", body: {
+    "firstName": firstName,
+    "secondName": secondName,
+    "userName": userName,
+    "gender": gender,
+    "countryName": country,
+    "firstPassword": password,
+    "confirmPassword": confirmPassword
 
-    
-
-    // alert(username);
-    // alert(password);
-    // alert(confirmPassword);
-
-   const getdata = await fetch(`https://localhost:7086/api/login?userName=${username} &firstPassword=${password}&confirmPassword=${confirmPassword}`).then(result => result.json()).then(console.log("result"));
+   }}).then(result => result.json()).then(console.log("result"));
    console.log(getdata["userName"] );
    console.log(getdata);
 

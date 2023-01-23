@@ -18,9 +18,10 @@
     // alert(confirmPassword);
 
    const getdata = await fetch(`https://localhost:7086/api/login?userName=${username} &firstPassword=${password}&confirmPassword=${confirmPassword}`).then(result => result.json()).then(console.log("result"));
-   console.log(getdata["userName"] );
-   console.log(getdata);
-
+  // console.log(getdata["userName"] );
+   //console.log(getdata);
+    let mylocalStorage =  window.localStorage.setItem('getdata', JSON.stringify(getdata));
+    //console.log(mylocalStorage)
   
     if(username == getdata["userName"] &&  password == getdata["firstPassword"] &&   confirmPassword ==  getdata["confirmPassword"]){
         console.log("we are in");
