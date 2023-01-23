@@ -5,6 +5,7 @@ async function createSignUpValues( ){
     let firstName = document.getElementById('firstName').value;
     let secondName = document.getElementById('secondName').value;
     let userName = document.getElementById('username').value; 
+    let email = document.getElementById('email').value; 
     let country = document.getElementById('country').value;
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirm_password').value;
@@ -17,41 +18,28 @@ async function createSignUpValues( ){
     'Accept': 'application/json, text/plain, */*',
     'Content-Type': 'application/json',
    },
-   body: password === confirmPassword ?
+   body: userName !=null && email !=null && password === confirmPassword ?
    JSON.stringify({
     "firstName": firstName,
     "secondName": secondName,
     "userName": userName,
+    "email": email,
     "gender": gender,
     "countryName": country,
     "firstPassword": password,
     "confirmPassword": confirmPassword
-   }): alert("password mismatch")
+   }): alert("error")
 });
-   let data =  await sendData.json();
+   //let data =  await sendData.json();
+    alert(`Account created successfully, with: username ${userName} and email: ${email}`);
+   window.location.replace("./login.html");
 
-   window.location.replace("./login.html")
+//    console.log(data);
+//    alert(data);
 
-   console.log(data);
    } catch (error) {
     alert(error);
    }
-//    .then(result => result.json()).then(console.log("result"));
-//    console.log(sendData["userName"] );
-//    console.log(sendData);
-
-  
-    // if(username == getdata["userName"] &&  password == getdata["firstPassword"] &&   confirmPassword ==  getdata["confirmPassword"])
-    // {
-    //     console.log("we are in");
-    //     // routeToNextScreen.addEventListener("click", routeToNextScreen  );
-    // }
-    
-    // else{
-    //     // routeToNextScreen.addEventListener("click", routeError  );
  
-    //     }
-
-
 } 
     

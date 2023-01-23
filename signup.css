@@ -29,7 +29,7 @@ body{
      
 }
 
-#firstName, #secondName, #username, #gender, #country, #password,#confirm_password, #signup{
+#firstName, #secondName, #username, #gender, #country, #password,#confirm_password, #email, #signup{
     color: #466443;
     width: 300px;
     border-radius: 5px;
