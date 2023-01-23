@@ -1,27 +1,24 @@
 async function createSignUpValues( ){
-
-
-
+    var x = document.getElementById("gender").selectedIndex;
+    let gender = document.getElementsByTagName("option")[x].value;
+ 
     let firstName = document.getElementById('firstName').value;
     let secondName = document.getElementById('secondName').value;
-    let userName = document.getElementById('username').value;
-    let gender = document.getElementById('gender').value;
+    let userName = document.getElementById('username').value; 
     let country = document.getElementById('country').value;
     let password = document.getElementById('password').value;
     let confirmPassword = document.getElementById('confirm_password').value;
-    //getting data from the options
-    var x = document.getElementById("gender").selectedIndex;
-    alert(document.getElementsByTagName("option")[x].value);
-     
- alert(firstName);
- alert(secondName);
- alert(userName);
- alert(x);
- alert(country);
- alert(password);
- alert(confirmPassword);
 
-   const getdata = await fetch(`https://localhost:7086/api/createUser`, {method: "post", body: {
+   try {
+    const sendData = await fetch(`https://localhost:7086/api/createUser`, {
+    
+   method: 'post', 
+   headers: {
+    'Accept': 'application/json, text/plain, */*',
+    'Content-Type': 'application/json',
+   },
+   body: password === confirmPassword ?
+   JSON.stringify({
     "firstName": firstName,
     "secondName": secondName,
     "userName": userName,
@@ -29,27 +26,32 @@ async function createSignUpValues( ){
     "countryName": country,
     "firstPassword": password,
     "confirmPassword": confirmPassword
+   }): alert("password mismatch")
+});
+   let data =  await sendData.json();
 
-   }}).then(result => result.json()).then(console.log("result"));
-   console.log(getdata["userName"] );
-   console.log(getdata);
+   window.location.replace("./login.html")
+
+   console.log(data);
+   } catch (error) {
+    alert(error);
+   }
+//    .then(result => result.json()).then(console.log("result"));
+//    console.log(sendData["userName"] );
+//    console.log(sendData);
 
   
-    if(username == getdata["userName"] &&  password == getdata["firstPassword"] &&   confirmPassword ==  getdata["confirmPassword"]){
-        console.log("we are in");
-        routeToNextScreen.addEventListener("click", routeToNextScreen  );
-    }
+    // if(username == getdata["userName"] &&  password == getdata["firstPassword"] &&   confirmPassword ==  getdata["confirmPassword"])
+    // {
+    //     console.log("we are in");
+    //     // routeToNextScreen.addEventListener("click", routeToNextScreen  );
+    // }
     
-    else{
-        routeToNextScreen.addEventListener("click", routeError  );
+    // else{
+    //     // routeToNextScreen.addEventListener("click", routeError  );
  
-}
+    //     }
 
 
-}
-//  }
-//  console.log(getUserLoginValues.getdata);
-//  for(let i = 0; i < getUserLoginValues.getdata.length; i++){
-   
-//   }
+} 
     
