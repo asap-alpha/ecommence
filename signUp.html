@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
-    <title>LogIn</title>
+    <link rel="stylesheet" href="./signup.css">
+    <title>sign_up</title>
 </head>
 
 <body>
@@ -18,14 +18,34 @@
                     welcome to myShop
                 </h1>
                 <h4>
-                    please enter your details
+                    create an account to trade with us!
                 </h4>
             </div>
     
             <!-- userName-->
             <div >
+                <h2>First Name</h2>
+                <input id="firstName" type="text" placeholder="Enter your username">
+            </div>
+            <div >
+                <h2>Second Name</h2>
+                <input id="secondName" type="text" placeholder="Enter your username">
+            </div>
+            <div >
                 <h2>Username</h2>
                 <input id="username" type="text" placeholder="Enter your username">
+            </div>
+            <div >
+                <h2>Gender</h2>
+                <select id="gender" name="gender" id="">
+                    <option value="">Selece your gender </option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select>
+            </div>
+            <div >
+                <h2>Country</h2>
+                <input id="country" type="text" placeholder="Enter your username">
             </div>
     
             <!-- password-->
@@ -38,39 +58,24 @@
                 <h2>Confirm Password</h2>
                 <input id="confirm_password" type="password" placeholder="confirm password">
             </div>
-            <!-- remember and forget password div -->
-            <div class="button_remember_forget">
-                <!-- remember-->
-                <div>
-                    <input type="checkbox" name="" id="">
-                </div>
-                <div>
-                    <h3>Remember for 30 days</h3>
-                </div>
-                <!-- forget password div -->
-                <div>
-                    <a class="forget_password_link" href="#">
-                        <h3>Forget password</h3>
-                    </a>
-                </div>
-            </div>
+           
             <!-- Sign in button -->
             <div>
-                <a id="link_to_main_page" href="./main.html"><button onclick="getUserLoginValues()"  id="submit" type="submit" > Sign in</button></a>
+                <a id="link_to_main_page" href="./login.html"><button onclick=" "  id="signup" type="submit" > Sign Up</button></a>
             </div>
             <!-- sign up link -->
-             <div class="sign_up">
+             <div class="sign_in">
                 <div> 
-                    <h3>Don't Have An Account?</h3>
+                    <h3>Alright Have An Account ?</h3>
                 </div>
                  <div >
-                    <a class="sign_up_link" id="sign_up_link" href="/main.html">Sign Up</a>
+                    <a class="sign_up_link" id="sign_up_link" href="./login.html">Sign in</a>
                 </div>
              </div>
         </div>
  
     
-   <script src="./js/login.js"></script>
+   <script src="./js/signup.js"></script>
 </body>
 
 </html>
