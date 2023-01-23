@@ -24,19 +24,15 @@
   
     if(username == getdata["userName"] &&  password == getdata["firstPassword"] &&   confirmPassword ==  getdata["confirmPassword"]){
         console.log("we are in");
-        routeToNextScreen.addEventListener("click", routeToNextScreen  );
+        // routeToNextScreen.addEventListener("click", routeToNextScreen  );
+         document.location.replace("./main.html");
     }
     
     else{
-        routeToNextScreen.addEventListener("click", routeError  );
+        alert("wrong credentials");
  
 }
 
 
-}
-//  }
-//  console.log(getUserLoginValues.getdata);
-//  for(let i = 0; i < getUserLoginValues.getdata.length; i++){
-   
-//   }
+} 
     
