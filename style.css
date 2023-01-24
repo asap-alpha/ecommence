@@ -51,10 +51,15 @@ body {
   display: flex;
   align-items: center;
 }
-
+#logout,
 #logo,
 #account-logo {
   height: 40px;
+}
+
+#logout_icon:hover{
+  background: rgb(189, 9, 9);
+  border-radius: 50px ;
 }
 /* categories-dropdown */
 #categories-dropdown {

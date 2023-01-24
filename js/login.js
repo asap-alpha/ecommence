@@ -27,8 +27,8 @@
         console.log("we are in");
         // routeToNextScreen.addEventListener("click", routeToNextScreen  );
          document.location.replace("./main.html");
-    }
-    
+         alert("please wait...");
+    }     
     else{
         alert("wrong credentials");
  
